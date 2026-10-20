@@ -28,6 +28,13 @@
   .row { color:var(--txt); font-size:14.5px; margin:2px 0; }
   .badge { display:inline-block; margin-top:10px; background:rgba(61,220,151,.12); color:var(--good); border:1px solid rgba(61,220,151,.4); padding:3px 10px; border-radius:999px; font-size:12.5px; font-weight:700; }
   .inj { color:#ffb454; font-size:13px; margin-top:8px; }
+  .nav { display:flex; gap:8px; flex-wrap:wrap; justify-content:center; margin:14px 0 4px; }
+  .nav a { color:var(--dim); text-decoration:none; border:1px solid var(--line); padding:5px 14px; border-radius:999px; font-size:14px; }
+  .nav a.on { color:var(--txt); border-color:var(--acc); background:rgba(139,123,255,.12); font-weight:700; }
+  .final { font-size:21px; font-weight:800; margin:6px 0 2px; }
+  .hit { display:inline-block; margin-top:8px; background:rgba(61,220,151,.12); color:var(--good); border:1px solid rgba(61,220,151,.4); padding:3px 10px; border-radius:999px; font-size:12.5px; font-weight:700; }
+  .miss { display:inline-block; margin-top:8px; background:rgba(255,107,107,.10); color:#ff8f8f; border:1px solid rgba(255,107,107,.4); padding:3px 10px; border-radius:999px; font-size:12.5px; font-weight:700; }
+  .flagres { display:inline-block; margin-top:8px; margin-left:6px; color:var(--dim); border:1px solid var(--line); padding:3px 10px; border-radius:999px; font-size:12.5px; }
   .panel { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:18px 20px; margin-top:14px; }
   .panel p, .panel li { color:var(--dim); }
   .panel strong { color:var(--txt); }
@@ -41,9 +48,10 @@
   <p>NFL predictions from a transparent power-rating model — no narratives, just numbers.</p>
 </header>
 <div class="wrap">
+  <nav class="nav"><a href="week-06.html">Week 6</a><a href="index.html" class="on">Week 7 · current</a></nav>
   <div class="strip">
-    <div class="stat"><b>8–6</b><span>Week 6 picks (straight up)</span></div>
-    <div class="stat"><b>6/7</b><span>Week 6 spread flags vs Vegas (ATS)</span></div>
+    <div class="stat"><b>8–6</b><span>Week 6 picks (straight up) · season 8–6</span></div>
+    <div class="stat"><b>6/7</b><span>Spread flags vs Vegas (ATS), season to date</span></div>
     <div class="stat"><b>0.226</b><span>Week 6 Brier score (0.25 = coin flip)</span></div>
   </div>
 
@@ -78,7 +86,7 @@
   <h3>SF <span class="rec">(5-0)</span> @ ATL <span class="rec">(2-4)</span></h3>
   <div class="pick">SF — 77% win probability</div>
   <div class="row">Model fair ML: -329</div>
-  <div class="row">Vegas ML: SF -200 · ATL +154</div>
+  <div class="row">Vegas ML: SF -179 · ATL +139</div>
   <div class="row">Model spread: ATL +7.6 &nbsp;|&nbsp; Vegas: ATL +3.5</div>
   <div class="row">Projected score: SF 29 · ATL 21 &nbsp;·&nbsp; O/U 50.5</div>
   <span class="badge">MODEL EDGE: SF 4.1 pts</span>
@@ -206,7 +214,7 @@
   <div class="panel"><p><strong>In development.</strong> Nyx is a team-rating model today. A player-level projection model (usage rates, matchup splits, hit rates vs the actual line) is phase two — we'd rather publish nothing than publish a guess dressed up as a model.</p></div>
 
   <footer>
-    Updated October 20, 2026 · 10:49 AM ET · Lines: FanDuel via The Odds API · For entertainment and information only — model estimates, not betting advice. If gambling stops being fun, call 1-800-GAMBLER.
+    Updated October 20, 2026 · 11:01 AM ET · Lines: FanDuel via The Odds API · For entertainment and information only — model estimates, not betting advice. If gambling stops being fun, call 1-800-GAMBLER.
   </footer>
 </div>
 </body>
