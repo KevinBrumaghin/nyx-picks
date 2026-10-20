@@ -210,11 +210,26 @@
     <p>The model is graded every Tuesday after MNF — record, Brier score, and flag hit rate are published whether it won or lost. Weights only change when several weeks of evidence say so.</p>
   </div>
 
+  
+  <h2>Reading the board: spread flags &amp; the Brier score</h2>
+  <div class="panel">
+    <p><strong>What is a spread flag?</strong> A flag appears when the model's spread disagrees with the Vegas spread by <strong>3 or more points</strong>. Inside about 3 points, model and market disagreeing is just noise — different rounding, a bit of public money, a line that moved an hour ago. At 3+ points, one side is making a real claim the other rejects, and the flag names the team the model thinks is mispriced.</p>
+    <p><strong>Why flags happen.</strong> The model only eats statistics, so it can be slow on things Vegas prices instantly — a midweek injury, a quarterback quietly playing hurt. Or the reverse: Vegas shades popular teams because it knows the public will bet them anyway, and a stats-only model refuses to pay that tax. Every flag is one of those two stories. The weekly grading exists to find out which story is usually true.</p>
+    <p><strong>A flag can oppose the model's own pick.</strong> The pick answers "who wins?" — the flag answers "where is the price wrong?" In Week 6 the model picked the Rams to beat Arizona <em>and</em> flagged Arizona getting 12.5 points as the mispriced side. Arizona won outright. The pick lost; the flag was the better read. That is why the two are graded separately.</p>
+    <p><strong>How flags are graded.</strong> Against the closing Vegas line, every Tuesday, published win or lose — Week 6 went 6/7. One week proves nothing: the standing rule here is three straight weeks at 55% or better before a flag record counts as a real edge, and a flag is never, by itself, a betting recommendation. It does not know what price you got, or what you can afford to lose.</p>
+  </div>
+  <div class="panel">
+    <p><strong>What is the Brier score?</strong> The record tells you whether the pick won. The Brier score tells you whether the <em>confidence</em> was earned. For every game: take the model's win probability for the team that actually won, subtract 1, square it, then average over all games.</p>
+    <p>Call a game at 80% and win: (0.80 − 1)² = <strong>0.04</strong>, an excellent mark. Call it at 80% and lose: (0.80 − 0)² = <strong>0.64</strong> — the square makes confident misses cost far more than confident hits earn. Shrug 50/50 on everything and you score exactly <strong>0.25</strong>, the coin-flip baseline. The scale runs 0 (perfect) to 1 (perfectly wrong), lower is better.</p>
+    <p>Week 6 scored <strong>0.226</strong> — better than the coin-flip line, honestly short of sharp. One game shows why the number matters: Kansas City at 82% winning was worth 0.03, while the Rams at 66% losing cost 0.44 on its own. A model can post a winning record and still be badly calibrated; the Brier score is how you catch that.</p>
+  </div>
+
+
   <h2>Player props</h2>
   <div class="panel"><p><strong>In development.</strong> Nyx is a team-rating model today. A player-level projection model (usage rates, matchup splits, hit rates vs the actual line) is phase two — we'd rather publish nothing than publish a guess dressed up as a model.</p></div>
 
   <footer>
-    Updated October 20, 2026 · 11:01 AM ET · Lines: FanDuel via The Odds API · For entertainment and information only — model estimates, not betting advice. If gambling stops being fun, call 1-800-GAMBLER.
+    Updated October 20, 2026 · 11:13 AM ET · Lines: FanDuel via The Odds API · For entertainment and information only — model estimates, not betting advice. If gambling stops being fun, call 1-800-GAMBLER.
   </footer>
 </div>
 </body>
