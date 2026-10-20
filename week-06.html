@@ -31,6 +31,11 @@
   .hit { display:inline-block; margin-top:8px; background:rgba(61,220,151,.12); color:var(--good); border:1px solid rgba(61,220,151,.4); padding:3px 10px; border-radius:999px; font-size:12.5px; font-weight:700; }
   .miss { display:inline-block; margin-top:8px; background:rgba(255,107,107,.10); color:#ff8f8f; border:1px solid rgba(255,107,107,.4); padding:3px 10px; border-radius:999px; font-size:12.5px; font-weight:700; }
   .flagres { display:inline-block; margin-top:8px; margin-left:6px; color:var(--dim); border:1px solid var(--line); padding:3px 10px; border-radius:999px; font-size:12.5px; }
+  .zone { margin-top:10px; }
+  .zlabel { font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--dim); margin-bottom:2px; }
+  .tip { cursor:help; border-bottom:1px dotted currentColor; }
+  .verdicts { display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin-top:12px; }
+  .verdicts .hit, .verdicts .miss, .verdicts .flagres { margin-top:0; margin-left:0; }
   .panel { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:18px 20px; margin-top:14px; }
   .panel p, .panel li { color:var(--dim); }
   .panel strong { color:var(--txt); }
@@ -53,102 +58,88 @@
   <div class="grid">
 <article class="card">
   <h3>SEA @ DEN</h3>
-  <div class="pick">Model picked DEN — 62%</div>
-  <div class="row">Model spread: DEN -3.7</div>
   <div class="final">SEA 14 · DEN 17</div>
-  <div class="row">Vegas closing line: DEN +3.0</div><span class="hit">ATS ✓ covered</span>
-  <span class="hit">PICK ✓</span>
+  <div class="zone"><div class="zlabel">Model</div><div class="row">Pick: DEN — 62%</div><div class="row">Model spread: DEN -3.7</div></div>
+  <div class="zone"><div class="zlabel">Vegas</div><div class="row">Closing line: DEN +3.0</div></div>
+  <div class="verdicts"><span class="hit tip" title="Model pick: DEN at 62% confidence. Final: DEN 17, SEA 14 — DEN won, so the pick hit.">PICK ✓</span><span class="hit tip" title="ATS = against the spread. Line: DEN +3.0 at the DraftKings close. DEN won 17–14 (by 3), clearing the 3 points the line demanded. So the pick covered the spread.">ATS ✓ covered</span></div>
 </article><article class="card">
   <h3>HOU @ JAX</h3>
-  <div class="pick">Model picked JAX — 57%</div>
-  <div class="row">Model spread: JAX -2.2</div>
   <div class="final">HOU 34 · JAX 31</div>
-  <div class="row">Vegas closing line: JAX -2.5</div><span class="miss">ATS ✗ no cover</span>
-  <span class="miss">PICK ✗</span>
+  <div class="zone"><div class="zlabel">Model</div><div class="row">Pick: JAX — 57%</div><div class="row">Model spread: JAX -2.2</div></div>
+  <div class="zone"><div class="zlabel">Vegas</div><div class="row">Closing line: JAX -2.5</div></div>
+  <div class="verdicts"><span class="miss tip" title="Model pick: JAX at 57% confidence. Final: HOU 34, JAX 31 — JAX lost, so the pick missed.">PICK ✗</span><span class="miss tip" title="ATS = against the spread. Line: JAX -2.5 at the DraftKings close. JAX lost 31–34, a 3-point margin — short of the 2.5-point line. So the pick did not cover the spread.">ATS ✗ no cover</span></div>
 </article><article class="card">
   <h3>CHI @ ATL</h3>
-  <div class="pick">Model picked CHI — 51%</div>
-  <div class="row">Model spread: ATL +0.4</div>
   <div class="final">CHI 31 · ATL 23</div>
-  <div class="row">Vegas closing line: ATL +1.5</div><span class="hit">ATS ✓ covered</span>
-  <span class="hit">PICK ✓</span>
+  <div class="zone"><div class="zlabel">Model</div><div class="row">Pick: CHI — 51%</div><div class="row">Model spread: ATL +0.4</div></div>
+  <div class="zone"><div class="zlabel">Vegas</div><div class="row">Closing line: ATL +1.5</div></div>
+  <div class="verdicts"><span class="hit tip" title="Model pick: CHI at 51% confidence. Final: CHI 31, ATL 23 — CHI won, so the pick hit.">PICK ✓</span><span class="hit tip" title="ATS = against the spread. Line: CHI -1.5 at the DraftKings close. CHI won 31–23 (by 8), clearing the 1.5 points the line demanded. So the pick covered the spread.">ATS ✓ covered</span></div>
 </article><article class="card">
   <h3>BAL @ CLE</h3>
-  <div class="pick">Model picked BAL — 61%</div>
-  <div class="row">Model spread: CLE +3.7</div>
   <div class="final">BAL 10 · CLE 13</div>
-  <div class="row">Vegas closing line: CLE +3.0</div><span class="miss">ATS ✗ no cover</span>
-  <span class="miss">PICK ✗</span>
+  <div class="zone"><div class="zlabel">Model</div><div class="row">Pick: BAL — 61%</div><div class="row">Model spread: CLE +3.7</div></div>
+  <div class="zone"><div class="zlabel">Vegas</div><div class="row">Closing line: CLE +3.0</div></div>
+  <div class="verdicts"><span class="miss tip" title="Model pick: BAL at 61% confidence. Final: CLE 13, BAL 10 — BAL lost, so the pick missed.">PICK ✗</span><span class="miss tip" title="ATS = against the spread. Line: BAL -3.0 at the DraftKings close. BAL lost 10–13, a 3-point margin — short of the 3-point line. So the pick did not cover the spread.">ATS ✗ no cover</span></div>
 </article><article class="card">
   <h3>TEN @ IND</h3>
-  <div class="pick">Model picked IND — 60%</div>
-  <div class="row">Model spread: IND -3.2</div>
   <div class="final">TEN 26 · IND 20</div>
-  <div class="row">Vegas closing line: IND -6.5</div><span class="miss">ATS ✗ no cover</span>
-  <span class="miss">PICK ✗</span><span class="flagres">Vegas flag on TEN: HIT ✓</span>
+  <div class="zone"><div class="zlabel">Model</div><div class="row">Pick: IND — 60%</div><div class="row">Model spread: IND -3.2</div></div>
+  <div class="zone"><div class="zlabel">Vegas</div><div class="row">Closing line: IND -6.5</div></div>
+  <div class="verdicts"><span class="miss tip" title="Model pick: IND at 60% confidence. Final: TEN 26, IND 20 — IND lost, so the pick missed.">PICK ✗</span><span class="miss tip" title="ATS = against the spread. Line: IND -6.5 at the DraftKings close. IND lost 20–26, a 6-point margin — short of the 6.5-point line. So the pick did not cover the spread.">ATS ✗ no cover</span><span class="flagres tip" title="Spread flag: the model made this IND -3.2; Vegas closed IND -6.5 — a 3.3-point disagreement (3+ triggers a flag). The model said TEN was the mispriced side. TEN won 26–20; graded against the closing line, the flag hit.">Flag on TEN: HIT ✓</span></div>
 </article><article class="card">
   <h3>NYJ @ NE</h3>
-  <div class="pick">Model picked NE — 55%</div>
-  <div class="row">Model spread: NE -1.5</div>
   <div class="final">NYJ 19 · NE 26</div>
-  <div class="row">Vegas closing line: NE -7.5</div><span class="miss">ATS ✗ no cover</span>
-  <span class="hit">PICK ✓</span><span class="flagres">Vegas flag on NYJ: HIT ✓</span>
+  <div class="zone"><div class="zlabel">Model</div><div class="row">Pick: NE — 55%</div><div class="row">Model spread: NE -1.5</div></div>
+  <div class="zone"><div class="zlabel">Vegas</div><div class="row">Closing line: NE -7.5</div></div>
+  <div class="verdicts"><span class="hit tip" title="Model pick: NE at 55% confidence. Final: NE 26, NYJ 19 — NE won, so the pick hit.">PICK ✓</span><span class="miss tip" title="ATS = against the spread. Line: NE -7.5 at the DraftKings close. NE won 26–19, a 7-point margin — short of the 7.5-point line. So the pick did not cover the spread.">ATS ✗ no cover</span><span class="flagres tip" title="Spread flag: the model made this NE -1.5; Vegas closed NE -7.5 — a 6.0-point disagreement (3+ triggers a flag). The model said NYJ was the mispriced side. NYJ lost 19–26; graded against the closing line, the flag hit.">Flag on NYJ: HIT ✓</span></div>
 </article><article class="card">
   <h3>NO @ NYG</h3>
-  <div class="pick">Model picked NYG — 58%</div>
-  <div class="row">Model spread: NYG -2.5</div>
   <div class="final">NO 34 · NYG 27</div>
-  <div class="row">Vegas closing line: NYG +1.5</div><span class="miss">ATS ✗ no cover</span>
-  <span class="miss">PICK ✗</span><span class="flagres">Vegas flag on NYG: MISS ✗</span>
+  <div class="zone"><div class="zlabel">Model</div><div class="row">Pick: NYG — 58%</div><div class="row">Model spread: NYG -2.5</div></div>
+  <div class="zone"><div class="zlabel">Vegas</div><div class="row">Closing line: NYG +1.5</div></div>
+  <div class="verdicts"><span class="miss tip" title="Model pick: NYG at 58% confidence. Final: NO 34, NYG 27 — NYG lost, so the pick missed.">PICK ✗</span><span class="miss tip" title="ATS = against the spread. Line: NYG +1.5 at the DraftKings close. NYG lost 27–34, a 7-point margin — short of the 1.5-point line. So the pick did not cover the spread.">ATS ✗ no cover</span><span class="flagres tip" title="Spread flag: the model made this NYG -2.5; Vegas closed NYG +1.5 — a 4.0-point disagreement (3+ triggers a flag). The model said NYG was the mispriced side. NYG lost 27–34; graded against the closing line, the flag missed.">Flag on NYG: MISS ✗</span></div>
 </article><article class="card">
   <h3>CAR @ PHI</h3>
-  <div class="pick">Model picked CAR — 79%</div>
-  <div class="row">Model spread: PHI +8.5</div>
   <div class="final">CAR 25 · PHI 14</div>
-  <div class="row">Vegas closing line: PHI +3.0</div><span class="hit">ATS ✓ covered</span>
-  <span class="hit">PICK ✓</span><span class="flagres">Vegas flag on CAR: HIT ✓</span>
+  <div class="zone"><div class="zlabel">Model</div><div class="row">Pick: CAR — 79%</div><div class="row">Model spread: PHI +8.5</div></div>
+  <div class="zone"><div class="zlabel">Vegas</div><div class="row">Closing line: PHI +3.0</div></div>
+  <div class="verdicts"><span class="hit tip" title="Model pick: CAR at 79% confidence. Final: CAR 25, PHI 14 — CAR won, so the pick hit.">PICK ✓</span><span class="hit tip" title="ATS = against the spread. Line: CAR -3.0 at the DraftKings close. CAR won 25–14 (by 11), clearing the 3 points the line demanded. So the pick covered the spread.">ATS ✓ covered</span><span class="flagres tip" title="Spread flag: the model made this PHI +8.5; Vegas closed PHI +3.0 — a 5.5-point disagreement (3+ triggers a flag). The model said CAR was the mispriced side. CAR won 25–14; graded against the closing line, the flag hit.">Flag on CAR: HIT ✓</span></div>
 </article><article class="card">
   <h3>PIT @ TB</h3>
-  <div class="pick">Model picked PIT — 69%</div>
-  <div class="row">Model spread: TB +5.5</div>
   <div class="final">PIT 26 · TB 19</div>
-  <div class="row">Vegas closing line: TB +2.5</div><span class="hit">ATS ✓ covered</span>
-  <span class="hit">PICK ✓</span><span class="flagres">Vegas flag on PIT: HIT ✓</span>
+  <div class="zone"><div class="zlabel">Model</div><div class="row">Pick: PIT — 69%</div><div class="row">Model spread: TB +5.5</div></div>
+  <div class="zone"><div class="zlabel">Vegas</div><div class="row">Closing line: TB +2.5</div></div>
+  <div class="verdicts"><span class="hit tip" title="Model pick: PIT at 69% confidence. Final: PIT 26, TB 19 — PIT won, so the pick hit.">PICK ✓</span><span class="hit tip" title="ATS = against the spread. Line: PIT -2.5 at the DraftKings close. PIT won 26–19 (by 7), clearing the 2.5 points the line demanded. So the pick covered the spread.">ATS ✓ covered</span><span class="flagres tip" title="Spread flag: the model made this TB +5.5; Vegas closed TB +2.5 — a 3.0-point disagreement (3+ triggers a flag). The model said PIT was the mispriced side. PIT won 26–19; graded against the closing line, the flag hit.">Flag on PIT: HIT ✓</span></div>
 </article><article class="card">
   <h3>ARI @ LAR</h3>
-  <div class="pick">Model picked LAR — 66%</div>
-  <div class="row">Model spread: LAR -4.8</div>
   <div class="final">ARI 18 · LAR 16</div>
-  <div class="row">Vegas closing line: LAR -13.5</div><span class="miss">ATS ✗ no cover</span>
-  <span class="miss">PICK ✗</span><span class="flagres">Vegas flag on ARI: HIT ✓</span>
+  <div class="zone"><div class="zlabel">Model</div><div class="row">Pick: LAR — 66%</div><div class="row">Model spread: LAR -4.8</div></div>
+  <div class="zone"><div class="zlabel">Vegas</div><div class="row">Closing line: LAR -13.5</div></div>
+  <div class="verdicts"><span class="miss tip" title="Model pick: LAR at 66% confidence. Final: ARI 18, LAR 16 — LAR lost, so the pick missed.">PICK ✗</span><span class="miss tip" title="ATS = against the spread. Line: LAR -13.5 at the DraftKings close. LAR lost 16–18, a 2-point margin — short of the 13.5-point line. So the pick did not cover the spread.">ATS ✗ no cover</span><span class="flagres tip" title="Spread flag: the model made this LAR -4.8; Vegas closed LAR -13.5 — an 8.7-point disagreement (3+ triggers a flag). The model said ARI was the mispriced side. ARI won 18–16; graded against the closing line, the flag hit.">Flag on ARI: HIT ✓</span></div>
 </article><article class="card">
   <h3>LAC @ KC</h3>
-  <div class="pick">Model picked KC — 82%</div>
-  <div class="row">Model spread: KC -9.3</div>
   <div class="final">LAC 6 · KC 22</div>
-  <div class="row">Vegas closing line: KC -7.5</div><span class="hit">ATS ✓ covered</span>
-  <span class="hit">PICK ✓</span>
+  <div class="zone"><div class="zlabel">Model</div><div class="row">Pick: KC — 82%</div><div class="row">Model spread: KC -9.3</div></div>
+  <div class="zone"><div class="zlabel">Vegas</div><div class="row">Closing line: KC -7.5</div></div>
+  <div class="verdicts"><span class="hit tip" title="Model pick: KC at 82% confidence. Final: KC 22, LAC 6 — KC won, so the pick hit.">PICK ✓</span><span class="hit tip" title="ATS = against the spread. Line: KC -7.5 at the DraftKings close. KC won 22–6 (by 16), clearing the 7.5 points the line demanded. So the pick covered the spread.">ATS ✓ covered</span></div>
 </article><article class="card">
   <h3>BUF @ LV</h3>
-  <div class="pick">Model picked LV — 56%</div>
-  <div class="row">Model spread: LV -1.8</div>
   <div class="final">BUF 33 · LV 30</div>
-  <div class="row">Vegas closing line: LV +5.5</div><span class="hit">ATS ✓ covered</span>
-  <span class="miss">PICK ✗</span><span class="flagres">Vegas flag on LV: HIT ✓</span>
+  <div class="zone"><div class="zlabel">Model</div><div class="row">Pick: LV — 56%</div><div class="row">Model spread: LV -1.8</div></div>
+  <div class="zone"><div class="zlabel">Vegas</div><div class="row">Closing line: LV +5.5</div></div>
+  <div class="verdicts"><span class="miss tip" title="Model pick: LV at 56% confidence. Final: BUF 33, LV 30 — LV lost, so the pick missed.">PICK ✗</span><span class="hit tip" title="ATS = against the spread. Line: LV +5.5 at the DraftKings close. LV lost 30–33, but only by 3 — inside the 5.5 points they were getting. So the pick covered the spread.">ATS ✓ covered</span><span class="flagres tip" title="Spread flag: the model made this LV -1.8; Vegas closed LV +5.5 — a 7.3-point disagreement (3+ triggers a flag). The model said LV was the mispriced side. LV lost 30–33; graded against the closing line, the flag hit.">Flag on LV: HIT ✓</span></div>
 </article><article class="card">
   <h3>DAL @ GB</h3>
-  <div class="pick">Model picked GB — 55%</div>
-  <div class="row">Model spread: GB -1.4</div>
   <div class="final">DAL 13 · GB 23</div>
-  <div class="row">Vegas closing line: GB +1.5</div><span class="hit">ATS ✓ covered</span>
-  <span class="hit">PICK ✓</span>
+  <div class="zone"><div class="zlabel">Model</div><div class="row">Pick: GB — 55%</div><div class="row">Model spread: GB -1.4</div></div>
+  <div class="zone"><div class="zlabel">Vegas</div><div class="row">Closing line: GB +1.5</div></div>
+  <div class="verdicts"><span class="hit tip" title="Model pick: GB at 55% confidence. Final: GB 23, DAL 13 — GB won, so the pick hit.">PICK ✓</span><span class="hit tip" title="ATS = against the spread. Line: GB +1.5 at the DraftKings close. GB won 23–13 (by 10), clearing the 1.5 points the line demanded. So the pick covered the spread.">ATS ✓ covered</span></div>
 </article><article class="card">
   <h3>WSH @ SF</h3>
-  <div class="pick">Model picked SF — 74%</div>
-  <div class="row">Model spread: SF -6.9</div>
   <div class="final">WSH 17 · SF 23</div>
-  <div class="row">Vegas closing line: SF -7.5</div><span class="miss">ATS ✗ no cover</span>
-  <span class="hit">PICK ✓</span>
+  <div class="zone"><div class="zlabel">Model</div><div class="row">Pick: SF — 74%</div><div class="row">Model spread: SF -6.9</div></div>
+  <div class="zone"><div class="zlabel">Vegas</div><div class="row">Closing line: SF -7.5</div></div>
+  <div class="verdicts"><span class="hit tip" title="Model pick: SF at 74% confidence. Final: SF 23, WSH 17 — SF won, so the pick hit.">PICK ✓</span><span class="miss tip" title="ATS = against the spread. Line: SF -7.5 at the DraftKings close. SF won 23–17, a 6-point margin — short of the 7.5-point line. So the pick did not cover the spread.">ATS ✗ no cover</span></div>
 </article>
   </div>
   
