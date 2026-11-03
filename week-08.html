@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nyx Picks — Week 8 Results</title>
+<style>
+  :root { --bg:#0b0e1a; --card:#141a2e; --line:#232c47; --txt:#e8ecf7; --dim:#94a0c2; --acc:#8b7bff; --good:#3ddc97; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--txt); font:16px/1.55 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+  header { padding:44px 20px 8px; text-align:center; }
+  header h1 { margin:0; font-size:42px; letter-spacing:.5px; }
+  header h1 .moon { color:var(--acc); }
+  header p { color:var(--dim); margin:6px 0 0; }
+  .wrap { max-width:920px; margin:0 auto; padding:16px; }
+  .strip { display:flex; gap:12px; flex-wrap:wrap; justify-content:center; margin:18px 0 6px; }
+  .stat { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:12px 18px; text-align:center; }
+  .stat b { display:block; font-size:22px; }
+  .stat span { color:var(--dim); font-size:13px; }
+  h2 { margin:30px 0 10px; font-size:22px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(280px, 1fr)); gap:14px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:16px 18px; }
+  .card h3 { margin:2px 0 8px; font-size:19px; }
+  .rec { color:var(--dim); font-weight:400; font-size:14px; }
+  .pick { font-weight:700; color:var(--acc); margin-bottom:6px; }
+  .row { color:var(--txt); font-size:14.5px; margin:2px 0; }
+  .nav { display:flex; gap:8px; flex-wrap:wrap; justify-content:center; margin:14px 0 4px; }
+  .nav a { color:var(--dim); text-decoration:none; border:1px solid var(--line); padding:5px 14px; border-radius:999px; font-size:14px; }
+  .nav a.on { color:var(--txt); border-color:var(--acc); background:rgba(139,123,255,.12); font-weight:700; }
+  .final { font-size:21px; font-weight:800; margin:6px 0 2px; }
+  .hit { display:inline-block; margin-top:8px; background:rgba(61,220,151,.12); color:var(--good); border:1px solid rgba(61,220,151,.4); padding:3px 10px; border-radius:999px; font-size:12.5px; font-weight:700; }
+  .miss { display:inline-block; margin-top:8px; background:rgba(255,107,107,.10); color:#ff8f8f; border:1px solid rgba(255,107,107,.4); padding:3px 10px; border-radius:999px; font-size:12.5px; font-weight:700; }
+  .flagres { display:inline-block; margin-top:8px; margin-left:6px; color:var(--dim); border:1px solid var(--line); padding:3px 10px; border-radius:999px; font-size:12.5px; }
+  .zone { margin-top:10px; }
+  .zlabel { font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--dim); margin-bottom:2px; }
+  .tip { position:relative; cursor:help; }
+  .tip::after { content:attr(data-tip); position:absolute; left:50%; bottom:calc(100% + 10px); transform:translateX(-50%) translateY(4px); width:max-content; max-width:min(270px, 80vw); background:#0d1120; color:#e8ecf7; border:1px solid #8b7bff; border-radius:10px; padding:10px 12px; font-size:13px; font-weight:400; line-height:1.5; text-align:left; white-space:normal; opacity:0; pointer-events:none; transition:opacity .15s ease, transform .15s ease; z-index:60; box-shadow:0 10px 30px rgba(0,0,0,.55); }
+  .tip:hover::after, .tip:focus::after { opacity:1; transform:translateX(-50%) translateY(0); }
+  .tip:focus { outline:2px solid #8b7bff; outline-offset:2px; }
+  .verdicts { display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin-top:12px; }
+  .verdicts .hit, .verdicts .miss, .verdicts .flagres { margin-top:0; margin-left:0; }
+  .panel { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:18px 20px; margin-top:14px; }
+  .panel p, .panel li { color:var(--dim); }
+  .panel strong { color:var(--txt); }
+  footer { color:var(--dim); font-size:13px; text-align:center; padding:28px 16px 40px; }
+</style>
+</head>
+<body>
+<header>
+  <h1><span class="moon">☾</span> NYX PICKS</h1>
+  <p>Week 8 — what the model said, and what actually happened.</p>
+</header>
+<div class="wrap">
+  <nav class="nav"><a href="week-06.html">Week 6</a><a href="week-07.html">Week 7</a><a href="week-08.html" class="on">Week 8</a><a href="index.html">Week 9 · current</a></nav>
+  <div class="strip">
+    <div class="stat"><b>11–3</b><span>Week 8 picks (straight up)</span></div>
+    <div class="stat"><b>2/2</b><span>Spread flags vs Vegas (ATS)</span></div>
+    <div class="stat"><b>0.168</b><span>Brier score (0.25 = coin flip)</span></div>
+  </div>
+  <h2>Week 8 · Predictions vs finals</h2>
+  <div class="grid">
+<article class="card">
+  <h3>CAR @ GB</h3>
+  <div class="final">CAR 19 · GB 27</div>
+  <div class="zone"><div class="zlabel">Model</div><div class="row">Pick: GB — 60%</div><div class="row">Model spread: GB -3.2</div></div>
+  <div class="zone"><div class="zlabel">Vegas</div><div class="row">Closing line: GB -3.5</div></div>
+  <div class="verdicts"><span class="hit tip" tabindex="0" data-tip="Model pick: GB at 60% confidence. Final: GB 27, CAR 19 — GB won, so the pick hit.">PICK ✓</span><span class="hit tip" tabindex="0" data-tip="ATS = against the spread. Line: GB -3.5 at the DraftKings close. GB won 27–19 (by 8), clearing the 3.5 points the line demanded. So the pick covered the spread.">ATS ✓ covered</span></div>
+</article><article class="card">
+  <h3>BAL @ BUF</h3>
+  <div class="final">BAL 10 · BUF 36</div>
+  <div class="zone"><div class="zlabel">Model</div><div class="row">Pick: BUF — 57%</div><div class="row">Model spread: BUF -2.1</div></div>
+  <div class="zone"><div class="zlabel">Vegas</div><div class="row">Closing line: BUF -3.0</div></div>
+  <div class="verdicts"><span class="hit tip" tabindex="0" data-tip="Model pick: BUF at 57% confidence. Final: BUF 36, BAL 10 — BUF won, so the pick hit.">PICK ✓</span><span class="hit tip" tabindex="0" data-tip="ATS = against the spread. Line: BUF -3.0 at the DraftKings close. BUF won 36–10 (by 26), clearing the 3 points the line demanded. So the pick covered the spread.">ATS ✓ covered</span></div>
+</article><article class="card">
+  <h3>TEN @ CIN</h3>
+  <div class="final">TEN 36 · CIN 43</div>
+  <div class="zone"><div class="zlabel">Model</div><div class="row">Pick: CIN — 85%</div><div class="row">Model spread: CIN -10.3</div></div>
+  <div class="zone"><div class="zlabel">Vegas</div><div class="row">Closing line: CIN -13.5</div></div>
+  <div class="verdicts"><span class="hit tip" tabindex="0" data-tip="Model pick: CIN at 85% confidence. Final: CIN 43, TEN 36 — CIN won, so the pick hit.">PICK ✓</span><span class="miss tip" tabindex="0" data-tip="ATS = against the spread. Line: CIN -13.5 at the DraftKings close. CIN won 43–36, a 7-point margin — short of the 13.5-point line. So the pick did not cover the spread.">ATS ✗ no cover</span></div>
+</article><article class="card">
+  <h3>ARI @ DAL</h3>
+  <div class="final">ARI 33 · DAL 30</div>
+  <div class="zone"><div class="zlabel">Model</div><div class="row">Pick: DAL — 66%</div><div class="row">Model spread: DAL -4.9</div></div>
+  <div class="zone"><div class="zlabel">Vegas</div><div class="row">Closing line: DAL -7.0</div></div>
+  <div class="verdicts"><span class="miss tip" tabindex="0" data-tip="Model pick: DAL at 66% confidence. Final: ARI 33, DAL 30 — DAL lost, so the pick missed.">PICK ✗</span><span class="miss tip" tabindex="0" data-tip="ATS = against the spread. Line: DAL -7.0 at the DraftKings close. DAL lost 30–33, a 3-point margin — short of the 7-point line. So the pick did not cover the spread.">ATS ✗ no cover</span></div>
+</article><article class="card">
+  <h3>MIN @ DET</h3>
+  <div class="final">MIN 15 · DET 19</div>
+  <div class="zone"><div class="zlabel">Model</div><div class="row">Pick: DET — 62%</div><div class="row">Model spread: DET -4.1</div></div>
+  <div class="zone"><div class="zlabel">Vegas</div><div class="row">Closing line: DET -3.5</div></div>
+  <div class="verdicts"><span class="hit tip" tabindex="0" data-tip="Model pick: DET at 62% confidence. Final: DET 19, MIN 15 — DET won, so the pick hit.">PICK ✓</span><span class="hit tip" tabindex="0" data-tip="ATS = against the spread. Line: DET -3.5 at the DraftKings close. DET won 19–15 (by 4), clearing the 3.5 points the line demanded. So the pick covered the spread.">ATS ✓ covered</span></div>
+</article><article class="card">
+  <h3>LV @ NYJ</h3>
+  <div class="final">LV 38 · NYJ 33</div>
+  <div class="zone"><div class="zlabel">Model</div><div class="row">Pick: LV — 52%</div><div class="row">Model spread: NYJ +0.6</div></div>
+  <div class="zone"><div class="zlabel">Vegas</div><div class="row">Closing line: NYJ -1.5</div></div>
+  <div class="verdicts"><span class="hit tip" tabindex="0" data-tip="Model pick: LV at 52% confidence. Final: LV 38, NYJ 33 — LV won, so the pick hit.">PICK ✓</span><span class="hit tip" tabindex="0" data-tip="ATS = against the spread. Line: LV +1.5 at the DraftKings close. LV won 38–33 (by 5), clearing the 1.5 points the line demanded. So the pick covered the spread.">ATS ✓ covered</span></div>
+</article><article class="card">
+  <h3>CLE @ PIT</h3>
+  <div class="final">CLE 6 · PIT 27</div>
+  <div class="zone"><div class="zlabel">Model</div><div class="row">Pick: PIT — 64%</div><div class="row">Model spread: PIT -4.3</div></div>
+  <div class="zone"><div class="zlabel">Vegas</div><div class="row">Closing line: PIT -3.5</div></div>
+  <div class="verdicts"><span class="hit tip" tabindex="0" data-tip="Model pick: PIT at 64% confidence. Final: PIT 27, CLE 6 — PIT won, so the pick hit.">PICK ✓</span><span class="hit tip" tabindex="0" data-tip="ATS = against the spread. Line: PIT -3.5 at the DraftKings close. PIT won 27–6 (by 21), clearing the 3.5 points the line demanded. So the pick covered the spread.">ATS ✓ covered</span></div>
+</article><article class="card">
+  <h3>ATL @ TB</h3>
+  <div class="final">ATL 0 · TB 16</div>
+  <div class="zone"><div class="zlabel">Model</div><div class="row">Pick: TB — 52%</div><div class="row">Model spread: TB -0.6</div></div>
+  <div class="zone"><div class="zlabel">Vegas</div><div class="row">Closing line: TB -2.5</div></div>
+  <div class="verdicts"><span class="hit tip" tabindex="0" data-tip="Model pick: TB at 52% confidence. Final: TB 16, ATL 0 — TB won, so the pick hit.">PICK ✓</span><span class="hit tip" tabindex="0" data-tip="ATS = against the spread. Line: TB -2.5 at the DraftKings close. TB won 16–0 (by 16), clearing the 2.5 points the line demanded. So the pick covered the spread.">ATS ✓ covered</span></div>
+</article><article class="card">
+  <h3>IND @ JAX</h3>
+  <div class="final">IND 7 · JAX 42</div>
+  <div class="zone"><div class="zlabel">Model</div><div class="row">Pick: JAX — 84%</div><div class="row">Model spread: JAX -9.9</div></div>
+  <div class="zone"><div class="zlabel">Vegas</div><div class="row">Closing line: JAX -10.5</div></div>
+  <div class="verdicts"><span class="hit tip" tabindex="0" data-tip="Model pick: JAX at 84% confidence. Final: JAX 42, IND 7 — JAX won, so the pick hit.">PICK ✓</span><span class="hit tip" tabindex="0" data-tip="ATS = against the spread. Line: JAX -10.5 at the DraftKings close. JAX won 42–7 (by 35), clearing the 10.5 points the line demanded. So the pick covered the spread.">ATS ✓ covered</span></div>
+</article><article class="card">
+  <h3>LAC @ LAR</h3>
+  <div class="final">LAC 9 · LAR 24</div>
+  <div class="zone"><div class="zlabel">Model</div><div class="row">Pick: LAR — 83%</div><div class="row">Model spread: LAR -9.6</div></div>
+  <div class="zone"><div class="zlabel">Vegas</div><div class="row">Closing line: LAR -6.5</div></div>
+  <div class="verdicts"><span class="hit tip" tabindex="0" data-tip="Model pick: LAR at 83% confidence. Final: LAR 24, LAC 9 — LAR won, so the pick hit.">PICK ✓</span><span class="hit tip" tabindex="0" data-tip="ATS = against the spread. Line: LAR -6.5 at the DraftKings close. LAR won 24–9 (by 15), clearing the 6.5 points the line demanded. So the pick covered the spread.">ATS ✓ covered</span><span class="flagres tip" tabindex="0" data-tip="Spread flag: the model made this LAR -9.6; Vegas closed LAR -6.5 — a 3.1-point disagreement (3+ triggers a flag). The model said LAR was the mispriced side. LAR won 24–9; graded against the closing line, the flag hit.">Flag on LAR: HIT ✓</span></div>
+</article><article class="card">
+  <h3>KC @ DEN</h3>
+  <div class="final">KC 24 · DEN 28</div>
+  <div class="zone"><div class="zlabel">Model</div><div class="row">Pick: KC — 58%</div><div class="row">Model spread: DEN +2.6</div></div>
+  <div class="zone"><div class="zlabel">Vegas</div><div class="row">Closing line: DEN -1.5</div></div>
+  <div class="verdicts"><span class="miss tip" tabindex="0" data-tip="Model pick: KC at 58% confidence. Final: DEN 28, KC 24 — KC lost, so the pick missed.">PICK ✗</span><span class="miss tip" tabindex="0" data-tip="ATS = against the spread. Line: KC +1.5 at the DraftKings close. KC lost 24–28, a 4-point margin — short of the 1.5-point line. So the pick did not cover the spread.">ATS ✗ no cover</span></div>
+</article><article class="card">
+  <h3>NE @ MIA</h3>
+  <div class="final">NE 24 · MIA 19</div>
+  <div class="zone"><div class="zlabel">Model</div><div class="row">Pick: NE — 69%</div><div class="row">Model spread: MIA +5.6</div></div>
+  <div class="zone"><div class="zlabel">Vegas</div><div class="row">Closing line: MIA +7.0</div></div>
+  <div class="verdicts"><span class="hit tip" tabindex="0" data-tip="Model pick: NE at 69% confidence. Final: NE 24, MIA 19 — NE won, so the pick hit.">PICK ✓</span><span class="miss tip" tabindex="0" data-tip="ATS = against the spread. Line: NE -7.0 at the DraftKings close. NE won 24–19, a 5-point margin — short of the 7-point line. So the pick did not cover the spread.">ATS ✗ no cover</span></div>
+</article><article class="card">
+  <h3>PHI @ WSH</h3>
+  <div class="final">PHI 10 · WSH 27</div>
+  <div class="zone"><div class="zlabel">Model</div><div class="row">Pick: WSH — 74%</div><div class="row">Model spread: WSH -6.6</div></div>
+  <div class="zone"><div class="zlabel">Vegas</div><div class="row">Closing line: WSH -5.5</div></div>
+  <div class="verdicts"><span class="hit tip" tabindex="0" data-tip="Model pick: WSH at 74% confidence. Final: WSH 27, PHI 10 — WSH won, so the pick hit.">PICK ✓</span><span class="hit tip" tabindex="0" data-tip="ATS = against the spread. Line: WSH -5.5 at the DraftKings close. WSH won 27–10 (by 17), clearing the 5.5 points the line demanded. So the pick covered the spread.">ATS ✓ covered</span></div>
+</article><article class="card">
+  <h3>CHI @ SEA</h3>
+  <div class="final">CHI 34 · SEA 17</div>
+  <div class="zone"><div class="zlabel">Model</div><div class="row">Pick: SEA — 50%</div><div class="row">Model spread: SEA PK</div></div>
+  <div class="zone"><div class="zlabel">Vegas</div><div class="row">Closing line: SEA -3.0</div></div>
+  <div class="verdicts"><span class="miss tip" tabindex="0" data-tip="Model pick: SEA at 50% confidence. Final: CHI 34, SEA 17 — SEA lost, so the pick missed.">PICK ✗</span><span class="miss tip" tabindex="0" data-tip="ATS = against the spread. Line: SEA -3.0 at the DraftKings close. SEA lost 17–34, a 17-point margin — short of the 3-point line. So the pick did not cover the spread.">ATS ✗ no cover</span><span class="flagres tip" tabindex="0" data-tip="Spread flag: the model made this SEA PK; Vegas closed SEA -3.0 — a 3.0-point disagreement (3+ triggers a flag). The model said CHI was the mispriced side. CHI won 34–17; graded against the closing line, the flag hit.">Flag on CHI: HIT ✓</span></div>
+</article>
+  </div>
+  
+  <h2>Reading the board: spread flags &amp; the Brier score</h2>
+  <div class="panel">
+    <p><strong>What is a spread flag?</strong> A flag appears when the model's spread disagrees with the Vegas spread by <strong>3 or more points</strong>. Inside about 3 points, model and market disagreeing is just noise — different rounding, a bit of public money, a line that moved an hour ago. At 3+ points, one side is making a real claim the other rejects, and the flag names the team the model thinks is mispriced.</p>
+    <p><strong>Why flags happen.</strong> The model only eats statistics, so it can be slow on things Vegas prices instantly — a midweek injury, a quarterback quietly playing hurt. Or the reverse: Vegas shades popular teams because it knows the public will bet them anyway, and a stats-only model refuses to pay that tax. Every flag is one of those two stories. The weekly grading exists to find out which story is usually true.</p>
+    <p><strong>A flag can oppose the model's own pick.</strong> The pick answers "who wins?" — the flag answers "where is the price wrong?" In Week 6 the model picked the Rams to beat Arizona <em>and</em> flagged Arizona getting 12.5 points as the mispriced side. Arizona won outright. The pick lost; the flag was the better read. That is why the two are graded separately.</p>
+    <p><strong>How flags are graded.</strong> Against the closing Vegas line, every Tuesday, published win or lose — Week 6 went 6/7. One week proves nothing: the standing rule here is three straight weeks at 55% or better before a flag record counts as a real edge, and a flag is never, by itself, a betting recommendation. It does not know what price you got, or what you can afford to lose.</p>
+  </div>
+  <div class="panel">
+    <p><strong>What is the Brier score?</strong> The record tells you whether the pick won. The Brier score tells you whether the <em>confidence</em> was earned. For every game: take the model's win probability for the team that actually won, subtract 1, square it, then average over all games.</p>
+    <p>Call a game at 80% and win: (0.80 − 1)² = <strong>0.04</strong>, an excellent mark. Call it at 80% and lose: (0.80 − 0)² = <strong>0.64</strong> — the square makes confident misses cost far more than confident hits earn. Shrug 50/50 on everything and you score exactly <strong>0.25</strong>, the coin-flip baseline. The scale runs 0 (perfect) to 1 (perfectly wrong), lower is better.</p>
+    <p>Week 6 scored <strong>0.226</strong> — better than the coin-flip line, honestly short of sharp. One game shows why the number matters: Kansas City at 82% winning was worth 0.03, while the Rams at 66% losing cost 0.44 on its own. A model can post a winning record and still be badly calibrated; the Brier score is how you catch that.</p>
+  </div>
+
+  <footer>Model version: v2 · Graded the Tuesday after MNF · For entertainment and information only — not betting advice.</footer>
+</div>
+</body>
+</html>
